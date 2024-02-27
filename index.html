@@ -8,6 +8,9 @@
 </head>
 <body>
  <script src="Web_to_lead.js"></script> 
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
 <h1> Create Lead</h1>
   <form 
         action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" 
@@ -20,6 +23,9 @@
          name="Lead_Date__c" 
          class="OutputDate"
          />
+<input type=hidden 
+       name='captcha_settings' 
+       value='{"keyname":"WebToLeadForm","fallback":"true","orgId":"00Dau000000NeWD","ts":""}'>      
   
   <label for="first_name">First Name</label>
   <input  id="first_name" 
@@ -55,7 +61,10 @@
             name="00Nau000000Ixkn" 
             size="12" 
             type="text" /></span><br> -->        
-  
+
+<div 
+   class="g-recaptcha"           data-sitekey="6LdqMoEpAAAAAK3vgwLiF0gb5ugvVJHj1_ggWzs6"></div><br>  
+
   <input type="submit" 
          name="submit"
          class="submit">
