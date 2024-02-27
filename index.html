@@ -15,7 +15,7 @@
   <form 
         action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" 
         method="POST"
-        onsubmit="beforesubmit()">
+        onsubmit="beforesubmit(event)">
   
   <input type=hidden name="oid" value="00Dau000000NeWD" />
   <input type=hidden name="retURL" value="https://kartikbauskar0311.github.io/Projects/thanks.html" />
@@ -63,7 +63,8 @@
             type="text" /></span><br> -->        
 
 <div 
-   class="g-recaptcha"           data-sitekey="6LdqMoEpAAAAAK3vgwLiF0gb5ugvVJHj1_ggWzs6"></div><br>  
+   class="g-recaptcha"  
+   data-callback="captchsuccess"         data-sitekey="6LdqMoEpAAAAAK3vgwLiF0gb5ugvVJHj1_ggWzs6"></div><br>  
 
   <input type="submit" 
          name="submit"
